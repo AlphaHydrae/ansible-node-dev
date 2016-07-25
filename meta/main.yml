@@ -1,0 +1,21 @@
+---
+galaxy_info:
+  author: Simon Oulevay (Alpha Hydrae)
+  description: Installs Node.js global modules for development.
+  license: MIT
+  min_ansible_version: 2.0
+
+  platforms:
+    - name: Darwin
+      versions:
+        - all
+
+  galaxy_tags:
+    - node
+    - nodejs
+    - dev
+
+dependencies:
+  - role: AlphaHydrae.node
+  - role: AlphaHydrae.nvm
+  - role: AlphaHydrae.multipass
