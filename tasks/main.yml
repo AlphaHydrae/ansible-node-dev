@@ -1,14 +1,13 @@
 ---
 
-# Homebrew
 - name: Install development npm modules
-  shell: npm install -g {{ item.name }} creates={{ node_dev_brew_path }}/{{ item.bin }}
+  npm: name={{ item }} global=yes executable={{ node_dev_npm_bin }} state=present
   with_items:
-    - { name: 'bower', bin: 'bower' }
-    - { name: 'express-generator', bin: 'express' }
-    - { name: 'grunt-cli', bin: 'grunt' }
-    - { name: 'gulp-cli', bin: 'gulp' }
-    - { name: 'nodemon', bin: 'nodemon' }
+    - bower
+    - express-generator
+    - grunt-cli
+    - gulp-cli
+    - nodemon
   environment:
     PATH: "{{ host_package_manager_paths }}{{ ansible_env.PATH }}"
   when: ansible_pkg_mgr == 'homebrew'

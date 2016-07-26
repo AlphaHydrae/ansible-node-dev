@@ -1,2 +1,3 @@
 ---
-node_dev_brew_path: /usr/local/bin
+node_dev_homebrew_dir: "{{ homebrew_dir | default('/usr/local') }}"
+node_dev_npm_bin: "{{ node_dev_homebrew_dir }}/bin/npm"
