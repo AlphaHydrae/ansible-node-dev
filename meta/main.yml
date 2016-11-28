@@ -16,7 +16,6 @@ galaxy_info:
     - dev
 
 dependencies:
-  - role: AlphaHydrae.mongo-dev
-  - role: AlphaHydrae.node
-  - role: AlphaHydrae.nvm
   - role: AlphaHydrae.multipass
+  - role: AlphaHydrae.node
+  - role: AlphaHydrae.nodenv
