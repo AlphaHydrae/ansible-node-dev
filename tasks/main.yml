@@ -1,13 +1,2 @@
 ---
-
-- name: Install development npm modules
-  npm: name={{ item }} global=yes executable={{ node_dev_npm_bin }} state=present
-  with_items:
-    - bower
-    - express-generator
-    - grunt-cli
-    - gulp-cli
-    - nodemon
-  environment:
-    PATH: "{{ host_package_manager_paths }}{{ ansible_env.PATH }}"
-  when: ansible_pkg_mgr == 'homebrew'
+# npm packages are installed with dependencies in `meta/main.yml`

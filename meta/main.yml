@@ -19,3 +19,13 @@ dependencies:
   - role: AlphaHydrae.multipass
   - role: AlphaHydrae.node
   - role: AlphaHydrae.nodenv
+  - role: AlphaHydrae.nodenv-packages
+    nodenv_packages:
+      - name: bower
+      - name: express-generator
+        bin: express
+      - name: grunt-cli
+        bin: grunt
+      - name: gulp-cli
+        bin: gulp
+      - name: nodemon
