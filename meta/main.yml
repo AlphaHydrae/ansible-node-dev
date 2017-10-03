@@ -22,10 +22,18 @@ dependencies:
   - role: AlphaHydrae.nodenv-packages
     nodenv_packages:
       - name: bower
+      - name: cordova
       - name: express-generator
         bin: express
       - name: grunt-cli
         bin: grunt
       - name: gulp-cli
         bin: gulp
+      - name: ionic
+      - name: ios-deploy
+      - name: knex
+      - name: live-server
+      - name: lorem-ipsum
       - name: nodemon
+      - name: vtop
+      - name: yo
