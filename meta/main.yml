@@ -21,12 +21,20 @@ dependencies:
   - role: AlphaHydrae.nodenv
   - role: AlphaHydrae.nodenv-packages
     nodenv_packages:
+      - name: cordova
       - name: create-react-app
       - name: express-generator
         bin: express
       - name: gulp-cli
         bin: gulp
+      - name: ionic
+      - name: ios-deploy
+      - name: knex
+      - name: live-server
+      - name: lorem-ipsum
       - name: nodemon
       - name: npx
+      - name: vtop
       - name: "@vue/cli"
         bin: vue
+      - name: yo
