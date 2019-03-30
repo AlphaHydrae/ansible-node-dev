@@ -21,11 +21,12 @@ dependencies:
   - role: AlphaHydrae.nodenv
   - role: AlphaHydrae.nodenv-packages
     nodenv_packages:
-      - name: bower
+      - name: create-react-app
       - name: express-generator
         bin: express
-      - name: grunt-cli
-        bin: grunt
       - name: gulp-cli
         bin: gulp
       - name: nodemon
+      - name: npx
+      - name: "@vue/cli"
+        bin: vue
