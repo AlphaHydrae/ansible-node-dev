@@ -28,7 +28,6 @@ dependencies:
       - name: gulp-cli
         bin: gulp
       - name: ionic
-      - name: ios-deploy
       - name: knex
       - name: live-server
       - name: lorem-ipsum
